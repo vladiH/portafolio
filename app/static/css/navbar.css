@@ -1,0 +1,87 @@
+ /* Style the navigation bar */
+ 
+ /* Add a black background color to the top navigation */
+ ul li {
+  list-style-type: none;
+  padding: 0rem;
+}
+
+ nav{
+   width: 50%;
+   text-align: center;
+   overflow: hidden;
+   position: relative; /* Safari */
+   left: 40%;
+ }
+ .topnav{
+   margin: auto;
+   width: 100%;
+   text-align: center;
+ }
+  
+  .navbar>li>a {
+    font-weight: 300;
+    display: block;
+    color: #ccd6f6;
+    font-size: 0.9rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar>li>a:hover {
+    color: #48A6E0;
+  }
+  
+  /* Add an active class to highlight the current page */
+  /*li>a.active {
+    color: #48A6E0;
+  }*/
+  
+  li>a>span{
+    font-size: 0.9rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: #48A6E0;
+  }
+  
+  .resume{
+    padding: 10px;
+    border: 1px #48A6E0;
+    border-style: solid ;
+    border-radius: 5px;
+    color: #48A6E0;
+  }
+  /* Hide the link that should open and close the topnav on small screens */
+  li.icon {
+    display: none;
+  } 
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen  and (-webkit-min-device-pixel-ratio : 2) and (max-width: 680px) {
+  .topnav li:not(:first-child){
+    display: none;
+  }
+  .topnav li.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio : 2) and (max-width: 680px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  .topnav.responsive li a{
+    display: block;
+    text-align: left;
+  }
+}

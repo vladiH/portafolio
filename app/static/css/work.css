@@ -1,0 +1,253 @@
+.works{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 50px;
+}
+.slider--teams {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+   .proyects {
+     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .arrow{
+    display: none;
+  }
+  #list {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    display: block;
+    justify-content: center;
+    padding: 0;
+    z-index: 0;
+  }
+  #list>li {
+    position: relative;
+    text-align: center;
+    clear: right;
+    float: left;
+  }
+  #list li .card {
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transition: transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 450ms ease-in-out;
+    transform: scale(0.8) translateZ(0px);
+  }
+  #list li .card:hover {
+    opacity: 0.9;
+    transform: scale(0.9) translateZ(0px);
+  }
+  #list li .card:active {
+    opacity: 1;
+    transform: scale(1.) translateZ(0px);
+  }
+  #list li figure > div > div {
+    background-size:contain;
+  }
+  #list li figure figcaption h2 {
+    padding-top: 10px;
+    color: #ccd6f6;
+    font-weight: 800;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  #list li:nth-child(1) figure > div > div {
+    background-position: 0px 0px !important;
+  }
+  #list li:nth-child(2) figure > div > div {
+    background-position: 0px 20% !important;
+  }
+  #list li:nth-child(3) figure > div > div {
+    background-position: 0px 40% !important;
+  }
+  #list li:nth-child(4) figure > div > div {
+    background-position: 0px 60% !important;
+  }
+  #list li:nth-child(5) figure > div > div {
+    background-position: 0px 80% !important;
+  }
+  #list li:nth-child(6) figure > div > div {
+    background-position: 0px 100% !important;
+  }
+  
+  .active {
+    opacity: 1 !important;
+    transform: scale(1) translateZ(0px) !important;
+  }
+  
+  .cf:before,
+  .cf:after {
+    content: " ";
+    display: table;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  .cf {
+    *zoom: 1;
+  }
+  .card{
+    border: 2px solid   #48A6E0;
+    background-color: transparent;
+    mix-blend-mode: overlay;
+  }
+  
+  /* Add a hover effect if you want */
+  .popup-info>a:hover {
+    color: #48A6E0;
+  }
+  
+  /* Twitter */
+  .popup-info>a {
+    color: #ccd6f6;
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  } 
+  
+  .popup-info{
+    clear: both;
+      position: relative;
+      color: #8892b0;
+      font-size: 1.1rem;
+      font-family: Merriweather, serif;
+      padding: 20px;
+      display: none;
+      text-align: center;
+      /* "delay" the visibility transition */
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+      z-index: 1;
+      overflow: visible;
+  }
+  .popup-info>span{
+    color: #8892b0;
+  font-size: 0.8rem;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  }
+
+  img{
+    object-fit: cover;
+    width: 100%;
+  }
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0.;}
+    to {opacity: 1.;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0.;}
+    to {opacity:1. ;}
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #48A6E0;
+    padding: 0;
+  }
+    @media screen  and (-webkit-min-device-pixel-ratio : 2) and (max-width: 680px) {
+    .slider--teams {
+        width: 100%;
+        opacity: 0.;
+      }
+      .arrow{
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+
+
+  /*notewothy-works*/
+  /* Float four columns side by side */
+.proyects1{
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.proyects1>h2{
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.noteworthy-work{
+  height: 100%;
+  text-align: center;
+}
+.noteworthy-work>a{
+  margin-bottom: 30px;
+  color: #ccd6f6;
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.noteworthy-work>a:hover{
+  color: #48A6E0;
+}
+.noteworthy-work>h3{
+  color: #ccd6f6;
+  font-weight: 800;
+  font-size: 0.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.noteworthy-work>p{
+  color: #8892b0;
+  font-size: 0.9rem;
+  font-family:  Merriweather, serif;
+}
+.noteworthy-work>span{
+  color: #8892b0;
+  font-size: 0.8rem;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.noteworthy-work {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:#112240;
+  border-radius: 5px;
+}

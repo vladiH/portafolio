@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="{{url_for('static',filename='./css/research.css')}}">
+<div class="research">
+  <h2 class="nav-number"><span>03. </span>Researchs</h2>
+    <div class="carousel">
+        <div class="carousel__control">
+        </div>
+        <div class="carousel__stage">
+          <div class="spinner spinner--left">
+            {%for index in range(0,length_researchs)%}
+            {%if index == 0%}
+            <div class="spinner__face js-active">
+            {%else%}
+            <div class="spinner__face">
+            {%endif%}
+              <div class="content" data-type="springer">
+                <div class="content__left">
+                  <h1>{{researchs[index][1]}}<br><span>{{researchs[index][2]}}</span></h1>
+                </div>
+                <div class="content__right">
+                  <div class="content__main">
+                    <p>{{researchs[index][3]}}</p>
+                    <ul class="urls">
+                      <li>
+                        <a href={{researchs[index][4]}}>Read</a>
+                      </li>
+                      <li>
+                        <a href={{researchs[index][5]}}>Code</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3 class="content__index">{{index}}</h3>
+                </div>
+              </div>
+            </div>
+            {%endfor%}
+          </div>
+        </div>
+      </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  type=text/javascript src="{{url_for('static',filename='./javascript/research.js')}}"></script>

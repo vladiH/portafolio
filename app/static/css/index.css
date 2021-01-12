@@ -1,0 +1,90 @@
+
+  html {
+    box-sizing: border-box;
+  }
+  header{
+    margin: 0px;
+  }
+  nav{
+    margin-bottom: 10px;
+  }
+  aside{
+    width: 30px;
+    position: fixed;
+    left: 0px;
+    top: 50%;
+  }
+  #correo{
+    writing-mode: vertical-lr;
+    width: 30px;
+    position: fixed;
+    text-align: right;
+    right: 0px;
+    left: 95%;
+    top: 30%;
+    color: #8892b0;
+    font-size: 0.9rem;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  }
+  body{
+    margin-bottom: 0px;
+    background-color: #020c1b;
+  }
+  footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #page{
+    opacity: 1;
+    display: none;
+    -webkit-animation-name: fadepage;
+  -webkit-animation-duration: 3s;
+  animation-name: fadepage;
+  animation-duration: 3s;
+  }
+  #loading{
+    position: relative;
+    perspective: 20em;
+    transform-origin: center;
+    margin: auto;
+    margin-top: 260px;
+  }
+  #section1{
+    width: 90%;
+    margin-left: 10%;
+  }
+  @media screen  and (-webkit-min-device-pixel-ratio : 2) and (max-width: 680px) {
+    aside{
+      text-align: center;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+    }
+    #correo{
+      display: none;
+    }
+    #section1{
+      width: 90%;
+      margin: auto;
+    }
+  }
+  @-webkit-keyframes fadepage { 
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    40% { opacity: 0.3; }
+    60% { opacity: 0.5; }
+    80% { opacity: 0.9; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadepage {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    40% { opacity: 0.3; }
+    60% { opacity: 0.5; }
+    80% { opacity: 0.9; }
+    100% { opacity: 1; }
+  }

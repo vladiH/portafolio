@@ -1,0 +1,8 @@
+primary = "#4F10AD"
+primary_com = "#7F44D6"
+secondary = "#9C02A7"
+secondary_com = "#C936D3"
+terciary = "#1921B1"
+terciary_com = "#4D54D8"
+complementary = "#FFE500"
+complementary_com = "#FFEC40"

@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
+  
+  <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+  <meta charset="utf-8">
+  <title>{{info[1]}}</title>
+  {% block head %}{% endblock %}
+</head>
+<body onload="load_page()">
+  <div id="page">
+    <header>
+      {% include 'publics/header.html' %}
+      <nav >
+        {% include 'publics/navbar.html' %}
+      </nav>
+    </header>
+    <aside>
+      {% include 'publics/social.html' %}
+    </aside>
+    <aside  id="correo">
+      <p>{{info[3]}}</p>
+    </aside>
+    <section id="intro" class="section">
+      {% include 'publics/init.html' %}
+    </section>
+    <section id="section1" class="section">
+      {% include 'publics/me.html' %}
+    </section>
+    <section id="section2" class="section">
+      {% include 'publics/work.html' %}
+    </section>
+    <section id="section3" class="section">
+      {% include 'publics/research.html' %}
+    </section>
+    <section id="section4" class="section">
+      {% include 'publics/get_in_touch.html' %}
+    </section>
+    <footer>
+      {% include 'publics/footer.html' %}
+    </footer> 
+  </div>
+  <div id="loading">
+    {% include 'publics/animation.html' %}
+  </div>
+</body>
+<script>
+  function load_page()
+  {
+    setTimeout(function() {
+      document.getElementById("page").style.display = "block";
+      document.getElementById("loading").style.display = "none";
+    }, 12000);
+  }
+</script>
+</html>

@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{url_for('static',filename='./css/me.css')}}">
+<div class="me">
+    <h2 class="nav-number"><span>01. </span>About Me</h2>
+    <div class="container-me">
+        <div class="text-me">
+            <p>{{me[0]}}</p>
+            <p>{{me[1]}}</p>
+            <p>{{me[2]}}</p>
+            <p>{{me[3]}}</p>
+        </div>
+        <div class="photo">
+            <figure>
+                <img src={{me[4]}}>
+            </figure>
+        </div>
+    </div>
+    <ul class="skills">
+        {%for skill in me[5]%}
+        <li>
+            {{skill}}
+        </li>
+        {%endfor%}
+    </ul>
+</div>

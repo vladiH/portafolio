@@ -1,0 +1,13 @@
+.social{
+    display: inline;
+}
+.social>a{
+    margin-left: 20px;
+    color: #ccd6f6;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.social>a:hover{
+    color: #48A6E0;
+}

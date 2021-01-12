@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="{{url_for('static',filename='./css/work.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='./css/card.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<div class="works">
+    <h2 class="nav-number"><span>02. </span>Some Things I’ve Built</h2>
+    <div class="slider--teams">
+        <div class="proyects">
+            <ul id="list" class="cf">
+                {%for index in range(0,length1)%}
+                    <li>
+                        {%if 0 == index%}
+                        <div class="card popup-main active"  ondblclick="openPopup('{{index}}')">
+                        {%else%}
+                        <div class="card popup-main"  ondblclick="openPopup('{{index}}')">
+                        {%endif%}
+                            <figure>
+                                <div>
+                                    <div><img src={{works[index][2]}} alt="Trulli"></div>
+                                </div>
+                                <figcaption>
+                                    <h2>{{works[index][1]}}</h2>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="popup-info" id="{{index}}">
+                            <p>{{works[index][3]}}
+                            </p>
+                            <br>
+                            <span>{{works[index][4]}}</span>
+                            <hr/>
+                            <a href={{works[index][5]}} class="fa fa-github" target="_blank" id="url-{{index}}"></a>
+                        </div>
+                    </li>
+                {%endfor%}
+            </ul>
+        </div>
+        <div class="arrow a-left"><i class="fa fa-fw fa-chevron-left"></i></div>
+        <div class="arrow a-right"><i class="fa fa-fw fa-chevron-right"></i></div>
+    </div>
+    <div class="proyects1">
+        <h2 class="nav-number">Other Noteworthy Projects</h2>
+        {%for i in range(0,length2,3)%}
+        <div class="row" id={{i}}>
+            {%for j in range(i,i+3)%}
+                {%if j<(length2)%}
+                <div class="column">
+                    <div class="noteworthy-work">
+                    <a href={{more_work[j][5]}} class="fa fa-github" target="_blank"></a>
+                    <h3>{{more_work[j][1]}}</h3>
+                    <p>{{more_work[j][3]}}</p>
+                    <span>{{more_work[j][4]}}</span>
+                    </div>
+                </div>
+                {%endif%}
+            {%endfor%}
+        </div>
+        {%endfor%}
+    </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js'></script>
+<script  type=text/javascript src="{{url_for('static',filename='./javascript/work.js')}}"></script>

@@ -1,0 +1,137 @@
+insert into info_init(greeting,name,phrase,introduce,email_link,state) values('Hi, my name is', 'Yuri Huallpa.', 'I turn your ideas into algorithms.',
+							'I am a software engineer and researcher, specialized in building applications, web pages and passionate about artificial intelligence.',
+							'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=yurihuallpavargas@gmail',
+							true);
+
+insert into info_me(greeting, content, goal, finish, img, state) 
+values('Hello!. I''m Yuri, a software engineer and researcher from Perú.',
+	  'I have more than 2 years of experience, I like to investigate and automate tasks through applications, websites or artificial intelligence models. My goal is always to build high quality and good performance products.',
+	  'I am currently researching an individual''s personality and their possible preferences based on the Myers-Briggs test taking only their thoughts in written form.',
+	  'Here are a few technologies I''ve been working with recently:',
+	  '../img/me.jpg',true);
+
+insert into skills(name, me_id) values('Tensorflow','9fb2762d-807f-4785-b5c6-92f459362b72'),
+('Keras','9fb2762d-807f-4785-b5c6-92f459362b72'),
+('Python','9fb2762d-807f-4785-b5c6-92f459362b72'),
+('JavaScript','9fb2762d-807f-4785-b5c6-92f459362b72'),
+('Flask','9fb2762d-807f-4785-b5c6-92f459362b72'),
+('GraphQL','9fb2762d-807f-4785-b5c6-92f459362b72'),
+('Power BI','9fb2762d-807f-4785-b5c6-92f459362b72'),
+('Flutter','9fb2762d-807f-4785-b5c6-92f459362b72');
+
+insert into works(title, img, information, skills, url, main, state) values(
+	'World development indicators', 
+	'https://storage.googleapis.com/mi-data/portafolio-img/wdi.png',
+	'Cleaning, analysis and development of a model to estimate trends in development indicators in Latin American countries. A pice of code can be found on the link below.',
+	'Python, Tesorflow, Keras, Pandas, Matplotlib, R, Numpy',
+	'https://github.com/vladiH/WDI',
+	true,
+	true),(
+	'Scraping on OLX', 
+	'https://storage.googleapis.com/mi-data/portafolio-img/scrapy.jpg',
+	'Automate and download information from OLX using Selenium. Find out the most sold second-used vehicles, the model, the departments with the highest influx of vehicles and more.',
+	'Selenium, Python, Pandas, Postgresql, Power BI, Multiprocessing',
+	'https://github.com/vladiH/olx_scrap',
+	true,
+	true),(
+	'Machine translation network for peruvian sign language recognition', 
+	'https://storage.googleapis.com/mi-data/portafolio-img/machine.png',
+	'Build and train an artificial intelligence model for the automatic translation of Peruvian sign language into Spanish.',
+	'Python, Tesorflow, keras, OpenCV, HDF5, Matplotlib, sklearn',
+	'https://github.com/vladiH/peruvian_sign_language_translation',
+	true,
+	true),
+	(
+	'Sales chatbot', 
+	'https://storage.googleapis.com/mi-data/portafolio-img/chat.png',
+	'Building, training and integration a chatbot for sales task along with dialogflow.',
+	'Python, Tesorflow, keras, Javascript, dialogflow, Nodejs, Postgresql, Airtable',
+	'https://github.com/vladiH/chatbot',
+	true,
+	true)
+
+insert into works(title, img, information, skills, url, main, state) values(
+	'Myers-Briggs test indicator', 
+	'',
+	'Cleaning, analysis and development of a model to classify person personality according to some extract about their thoughts in writing form. You can try demo on below link.',
+	'Python, Tesorflow, Keras, Pandas, Seaborn, numpy, Javascript, Flask, Postgresql, Css, html',
+	'url',
+	false,
+	true),
+	(
+	'Transformers from scratch', 
+	'',
+	'Implementation of "attention is all you need" from scratch on tensorflow and tested on english-spanish dataset from European Parliament Proceedings Parallel Corpus.',
+	'Python, Tesorflow, Keras, Pandas, Seaborn, numpy, HDF5, Colab, Matplotlib',
+	'url',
+	false,
+	true),
+	(
+	'Backend for real estate sales', 
+	'',
+	'Backend for real estate sales include ads for land selling, geolocalisation, charts in 2d over google maps and more. You can try beta demo on the below link.',
+	'Apollo-Server, NodeJs, GraphQL, Postgresql, Ecmascript 6',
+	'url',
+	false,
+	true),
+	(
+	'Fronend for real estate sales', 
+	'',
+	'The frontend for real estate sales includes all screens for the services developed in the backend using bloc pattern and reactive response.',
+	'Flutter, dart, flutter-GraphQL, SQLite, Google Cloud storage, Maps',
+	'url',
+	false,
+	true),
+	(
+	'Demo of quiz app', 
+	'',
+	'App for question and answering using block pattern on flutter.',
+	'Flutter, dart, Json, Rxdart',
+	'url',
+	false,
+	true),
+	(
+	'Dental system', 
+	'',
+	'Dental system automates all the most relevant processes, such as treatments, odontogram, reservations, income, expenses and more.',
+	'Java, Mysql, Hibernate',
+	'https://github.com/vladiH/sistema_odontologico',
+	false,
+	true),
+	(
+	'LSP recorder', 
+	'',
+	'Software to get 3 types of data (rgb, depth, skeleton) using Kinect sensor.',
+	'C#',
+	'https://github.com/vladiH/recorder-LSP/tree/master/KinectInfoBox',
+	false,
+	true),
+	(
+	'turismAPP', 
+	'',
+	'Tour package booking application includes services such as itinerary view, shopping cart, package reservation, package purchase and more.',
+	'Java, android studio, google maps, volley',
+	'https://github.com/vladiH/turismAPP',
+	false,
+	true),
+	(
+	'Portafolio', 
+	'',
+	'Website to show most relevant career path',
+	'Python, Flask, Javascript, Html, Css, Postgresql, Google cloud, Nginx',
+	'url',
+	false,
+	true)
+
+insert into me(name, last_name, email, cv, facebook, linkedin, github) values (
+	'Yuri Vladimir',
+	'Huallpa Vargas',
+	'yurihuallpavargas@gmail.com',
+	'static/files/yuri_vladimir_cv.pdf',
+	'https://www.facebook.com/yurivladimir.huallpavargas',
+	'https://www.linkedin.com/in/yuri-vladimir/',
+	'https://github.com/vladiH'
+)
+
+ALTER TABLE info_init ALTER COLUMN introduce TYPE varchar(240);
+It is composed by 4 phases: the preprocessing, feature extraction, encoder and decoder. Our proposed model is evaluated in LSA64 and ourself-built dataset. The experimental results show significant improvement compared to other models evaluated in these dataset.
