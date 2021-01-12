@@ -122,5 +122,5 @@ guide.md
 # You shouldn't keep your config file in version control
 #config.py
 
-static/sql/querys.txt
-resource/psql_credentials.yml
+querys.txt
+psql_credentials.yml
