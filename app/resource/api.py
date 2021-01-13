@@ -1,8 +1,6 @@
 from app.resource import setup_environment
 import sqlalchemy
-import pandas as pd
 import logging 
-from flask import jsonify
 
 log = logging.getLogger(__name__) 
 con = None
