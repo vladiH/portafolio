@@ -1,4 +1,4 @@
-create extension IF NOT EXISTS "uuid-ossp" schema pg_catalog version "1.1"; 
+create extension IF NOT EXISTS "uuid-ossp" schema public; 
 CREATE TABLE IF NOT EXISTS works (
 	work_id uuid DEFAULT uuid_generate_v4 (),
 	title varchar(120),
