@@ -1,5 +1,4 @@
 from app.resource import setup_environment
-import sqlalchemy
 import logging 
 
 log = logging.getLogger(__name__) 

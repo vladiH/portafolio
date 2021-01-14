@@ -124,7 +124,30 @@ insert into works(title, img, information, skills, url, main, state) values(
 	false,
 	true);
 	
-	
+	insert into researchs(title,editorial,abstract,link,github,state) values(
+		'Myers-Briggs test indicator',
+		'upcoming',
+		'The Myers-Briggs Personality Type Indicator is a self-report inventory designed to identify a person''s personality type, strengths, and preferences. Today, the MBTI inventory is one of the most widely used psychological instruments in the world.',
+		'url',
+		'url',
+		true
+	),(
+		'Peruvian Sign Language Recognition Using a Hybrid Deep Neural Network',
+		'Springer',
+		'Hearing impaired people have the ability to communicate with their hands and interpret sign language but this builds a communication gap with normal people, hence we propose a model to break this problem using artificial neural network.',
+		'https://link.springer.com/chapter/10.1007/978-3-030-46140-9_16',
+		'https://github.com/vladiH/peruvian_sign_language_translation',
+		true
+	),(
+		'Conditional Generative Adversarial Nets for Depth Image Generation',
+		'Unsaac',
+		'We present a model relied on CGAN for monocular depth estimation and we show that our model get good performance over other depth generation techniques in challenging environments. We achieved 3.0 on the Inception score metrics evaluated in our data set.',
+		'http://repositorio.unsaac.edu.pe/handle/UNSAAC/426',
+		'https://github.com/vladiH/CGAN',
+		true
+	);
+
+
 	insert into me(name, last_name, email, cv, facebook, linkedin, github) values (
 	'Yuri Vladimir',
 	'Huallpa Vargas',
