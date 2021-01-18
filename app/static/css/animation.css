@@ -9,7 +9,6 @@
     width: 100%;
     text-align: center;
     transform-style: preserve-3d;
-    overflow-x: hidden;
 }
 .letters{
     position: relative;
