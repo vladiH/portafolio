@@ -223,6 +223,11 @@
     font-family: oswald;
     color: #ccd6f6;
   }
+  .content__index{
+    width: auto;
+    background-color: transparent;
+    pointer-events: none;
+  }
   .urls{
     text-align: center;
   }

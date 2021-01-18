@@ -1,6 +1,7 @@
 
-  html {
+  html, body {
     box-sizing: border-box;
+    overflow: hidden;
   }
   header{
     margin: 0px;
